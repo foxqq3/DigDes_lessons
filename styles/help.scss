@@ -1,0 +1,11 @@
+.help {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  
+  &__menu {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+}

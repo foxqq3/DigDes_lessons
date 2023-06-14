@@ -1,0 +1,19 @@
+:root {
+
+    /* base colors */
+    --white: #ffffff;
+    --mischka: #D0D5DD;
+    --waterloo: #8181A5;
+    --cornflower-blue: #5E81F4;
+    --san-marino: #475eab;
+    --oxford-blue: #374957;
+    --shark: #1C1D21;
+    --carnation: #FB4B54;
+    --riptide: #7CE7AC;
+
+    /* opacity colors */
+    --san-marino-60: rgba(71, 94, 171, 0.6);
+    --white-40: rgba(255, 255, 255, 0.4);
+    --white-70: rgba(255, 255, 255, 0.7);
+    --shark-80: rgba(28, 29, 33, 0.9);
+}
