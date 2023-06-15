@@ -6,14 +6,25 @@
 // style for component
 
 .navigation-panel {
+  position: sticky;
   display: flex;
-  gap: spacing(6);
+  justify-content: flex-end;
+  gap: spacing(4);
   background-color: var(--primary-default);
-  padding: spacing(5);
+  padding: spacing(3);
+
+  @media (min-width: 1024px) {
+    gap: spacing(6);
+    padding: spacing(6);
+  }
 
   &__menu {
     display: flex;
-    gap: spacing(6);
+    gap: spacing(4);
+
+    @media (min-width: 1024px) {
+      gap: spacing(6);
+    }
   }
 
   &__menu-item {
@@ -34,5 +45,45 @@
       background-color: var(--secondary-active);
       border-color: (--secondary-active);
     }
+  }
+
+  &__button-user {
+    display: flex;
+    gap: spacing(2);
+    align-items: center;
+    padding: 0 spacing(4);
+    color: var(--secondary-default);
+    background-color: transparent;
+    border: 1px solid transparent;
+    border-radius: 4px;
+
+    &:hover {
+      color: var(--secondary-default);
+      border-color: var(--secondary-default);
+    }
+
+    &:active {
+      color: var(--secondary-active);
+      border-color: var(--secondary-default);
+      background-color: var(--secondary-default);
+    }
+  }
+
+  &__user-image-wrapper {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-disabled);
+    border-radius: 50%;
+  }
+
+  &__user-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
   }
 }
