@@ -1,7 +1,38 @@
 //default style
-@import "default-set.scss";
-@import "variables.css";
+@import 'variables.css';
+@import './functions/function.scss';
+@import 'default-set.scss';
 
+// style for component
 
-//components style
-@import "./components/navigation-panel.scss";
+.navigation-panel {
+  display: flex;
+  gap: spacing(6);
+  background-color: var(--primary-default);
+  padding: spacing(5);
+
+  &__menu {
+    display: flex;
+    gap: spacing(6);
+  }
+
+  &__menu-item {
+    display: inline-block;
+    padding: spacing(3) spacing(4);
+    color: var(--font-secondary);
+    border: 1px solid var(--secondary-default);
+    border-radius: 4px;
+
+    &:hover {
+      color: var(--font-primary);
+      background-color: var(--secondary-hover);
+      border-color: (--secondary-hover);
+    }
+
+    &:active {
+      color: var(--font-primary);
+      background-color: var(--secondary-active);
+      border-color: (--secondary-active);
+    }
+  }
+}

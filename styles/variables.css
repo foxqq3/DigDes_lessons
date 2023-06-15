@@ -1,18 +1,24 @@
 :root {
-    /* base colors */
-    --white: #ffffff;
-    --mischka: #D0D5DD;
-    --waterloo: #8181A5;
-    --cornflower-blue: #5E81F4;
-    --san-marino: #475eab;
-    --oxford-blue: #374957;
-    --shark: #1C1D21;
-    --carnation: #FB4B54;
-    --riptide: #7CE7AC;
+  /* base colors */
+  --primary-default: #1F75CB;
+  --primary-hover: #1068BF;
+  --primary-active: #0B5CAD;
+  --primary-disabled: #DCDCDE;
 
-    /* opacity colors */
-    --san-marino-60: rgba(71, 94, 171, 0.6);
-    --white-40: rgba(255, 255, 255, 0.4);
-    --white-70: rgba(255, 255, 255, 0.7);
-    --shark-80: rgba(28, 29, 33, 0.9);
+  --secondary-default: #FFFFFF;
+  --secondary-hover: #ECECEF;
+  --secondary-active: #DCDCDE;
+
+  --border-hover: rgba(18, 19, 22, 0.5);
+  --border-active: #1C1C1C;
+  --border-disabled: rgba(0, 0, 0, 0.15);
+  --border-default: rgba(0, 0, 0, 0.15);
+
+  --font-primary: #1C1C1C;
+  --font-secondary: #FFFFFF;
+  --font-disabled: #8E8E8E;
+  --font-placeholder: #D9D9D9;
+
+  --error: #EE4222;
+  --bronze: #9E6955;
 }
