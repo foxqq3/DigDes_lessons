@@ -1,0 +1,68 @@
+//default style
+@import 'variables.css';
+@import './functions/function.scss';
+@import 'default-set.scss';
+
+// style for component
+.wrapper {
+  padding: spacing(5);
+}
+
+.project-item {
+  display: flex;
+  align-items: center;
+  gap: spacing(4);
+  padding: 0 spacing(2) spacing(2);
+  border-bottom: 1px solid var(--border-active);
+
+  @media (min-width: 1024px) {
+    padding: 0 spacing(4) spacing(2);
+  }
+
+  &__info {
+    width: 100%;
+  }
+
+  &__description {
+    display: flex;
+    gap: spacing(3);
+    margin-top: spacing(2);
+
+    @media (min-width: 1024px) {
+      gap: spacing(4);
+      margin-top: spacing(5);
+    }
+  }
+
+  &__state-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: spacing(2);
+    width: 100%;
+  }
+
+  &__state {
+    display: block;
+    color: var(--font-disabled);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    word-wrap: normal;
+  }
+
+  &__browse-wrapper {
+    display: none;
+  }
+
+  &:hover &__browse-wrapper {
+    display: block;
+    padding: spacing(2);
+    line-height: 0;
+    color: var(--font-primary);
+    border: 1px solid var(--border-default);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+
+
+}
