@@ -1,0 +1,53 @@
+.button {
+  padding: spacing(4) spacing(3);
+  border-radius: 4px;
+  cursor: pointer;
+  
+  &_primary {
+    color: var(--font-secondary);
+    background-color: var(--primary-default);
+    border: 1px solid var(--primary-default);
+
+    &:hover {
+      background-color: var(--primary-hover);
+      border: 1px solid var(--primary-hover);
+    }
+
+    &:active {
+      background-color: var(--primary-active);
+      border: 1px solid var(--primary-active);
+    }
+
+    &:disabled {
+      color: var(--font-disabled);
+      background-color: var(--primary-disabled);
+      border: 1px solid var(--primary-disabled);
+    }
+  }
+
+  &_secondary {
+    background-color: var(--secondary-default);
+    border: 1px solid var(--border-default);
+
+    &:hover {
+      background-color: var(--secondary-hover);
+      border: 1px solid var(--border-hover);
+    }
+
+    &:active {
+      background-color: var(--secondary-active);
+      border: 1px solid var(--border-active);
+    }
+
+    &:disabled {
+      color: var(--font-disabled);
+      background-color: var(--secondary-default);
+      border: 1px solid var(--border-disabled);
+    }
+  }
+
+  &_icon{
+    padding: spacing(2);
+    line-height: 0;
+  }
+}

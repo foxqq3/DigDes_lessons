@@ -1,0 +1,18 @@
+.status {
+  padding: 0 spacing(2);
+  color: var(--font-secondary);
+  background-color: var(--primary-default);
+  border-radius: 4px;
+
+  &_bronze{
+    background-color: var(--bronze);
+  }
+
+  &_error{
+    background-color: var(--error);
+  }
+
+  &_disabled{
+    background-color: var(--font-disabled);
+  }
+}

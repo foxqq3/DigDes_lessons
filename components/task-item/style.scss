@@ -1,0 +1,14 @@
+//default style
+@import '/styles/variables.css';
+@import '/styles/functions/function.scss';
+@import '/styles/default-set.scss';
+
+//components
+@import '/styles/components/avatar.scss';
+@import '/styles/components/status.scss';
+@import '/styles/components/item.scss';
+
+// style for component
+.wrapper {
+  padding: spacing(5);
+}
