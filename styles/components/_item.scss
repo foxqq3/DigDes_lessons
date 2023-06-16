@@ -36,12 +36,7 @@
 
   &__description-wrapper {
     display: flex;
-    gap: spacing(2);
-
-
-    @media (min-width: 1024px) {
-      gap: spacing(4);
-    }
+    gap: spacing(4);
   }
 
   &__number {

@@ -12,22 +12,15 @@
   position: sticky;
   display: flex;
   justify-content: flex-end;
-  gap: spacing(4);
+  gap: spacing(6);
   background-color: var(--primary-default);
-  padding: spacing(3);
+  padding: spacing(6);
 
-  @media (min-width: 1024px) {
-    gap: spacing(6);
-    padding: spacing(6);
-  }
+
 
   &__menu {
     display: flex;
-    gap: spacing(4);
-
-    @media (min-width: 1024px) {
-      gap: spacing(6);
-    }
+    gap: spacing(6);
   }
 
   &__menu-item {
