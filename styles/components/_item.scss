@@ -5,10 +5,6 @@
   padding: 0 spacing(2) spacing(2);
   border-bottom: 1px solid var(--border-active);
 
-  @media (min-width: 1024px) {
-    padding: 0 spacing(4) spacing(2);
-  }
-
   &__info {
     width: 100%;
   }
@@ -32,15 +28,10 @@
 
   &__description {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     gap: spacing(2);
-    margin-top: spacing(2);
+    margin-top: spacing(5);
 
-    @media (min-width: 1024px) {
-      margin-top: spacing(5);
-      flex-direction: row;
-      justify-content: space-between;
-    }
   }
 
   &__description-wrapper {
